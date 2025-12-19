@@ -5,7 +5,7 @@ Tools: SQL, Excel, Tableau
 Focus Areas: Data Cleaning • Exploratory Analysis • Business Insights • Dashboarding • Strategic Recommendations
 
 
-Business Context
+##Business Context
 
 Between 2020 and 2023, organizations worldwide announced large-scale layoffs driven by the COVID-19 pandemic, economic uncertainty, and post-pandemic market corrections.
 
