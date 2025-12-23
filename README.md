@@ -1,9 +1,8 @@
-Global Layoffs Analysis (2020–2023)
+🌍 Global Layoffs Analysis (2020–2023)
 
 Role: Business Analyst
 Tools: SQL, Excel, Tableau
 Focus Areas: Data Cleaning • Exploratory Analysis • Business Insights • Dashboarding • Strategic Recommendations
-
 
 Business Context
 
@@ -13,19 +12,14 @@ For business leaders, HR teams, and investors, understanding where, when, and wh
 
 This project analyzes global layoff data to identify meaningful patterns across time, geography, industry, and company maturity, and translates those findings into business-relevant insights.
 
-
 Objective:
-
 To analyze global layoff trends and provide data-driven insights that support strategic decision-making around hiring, restructuring, and risk assessment.
-
 
 Dataset Overview
 
 Source: Global layoffs dataset (2020–2023)
 
 Coverage: 1,600+ companies across 50+ countries
-
-
 
 Key Fields:
 
@@ -45,7 +39,6 @@ Company Stage
 
 Funds Raised
 
-
 Data Quality & Preparation Approach (SQL)
 
 The raw dataset was not analysis-ready and contained several quality issues that could lead to misleading conclusions if left unaddressed.
@@ -62,7 +55,6 @@ Dates stored as text rather than date format
 
 Rows with incomplete layoff information
 
-
 Cleaning Approach
 
 All data preparation was performed using SQL to ensure repeatability and scalability:
@@ -77,6 +69,7 @@ Converted date fields and created time-based attributes
 
 Prepared clean, structured tables for analysis and visualization
 
+SQL scripts used for cleaning and analysis are available in the /sql folder.
 
 Key Metrics
 
@@ -88,9 +81,7 @@ Countries Impacted: 51
 
 These KPIs provide a high-level view of the scale and global reach of workforce reductions.
 
-
 Key Insights
-
 Layoffs Over Time
 
 Layoff activity remained relatively stable during 2020–2021
@@ -98,7 +89,6 @@ Layoff activity remained relatively stable during 2020–2021
 Significant spikes occurred in late 2022 and early 2023
 
 This pattern reflects post-pandemic workforce corrections following aggressive hiring cycles
-
 
 Business Takeaway:
 Layoffs tend to follow economic cycles rather than isolated company failures.
@@ -138,7 +128,6 @@ India and several European countries followed at a significant distance
 Business Takeaway:
 Countries with strong technology and corporate ecosystems experienced the largest workforce corrections.
 
-
 Companies with the Highest Layoffs
 
 Amazon
@@ -154,7 +143,6 @@ Uber
 Business Takeaway:
 Even market-leading organizations are highly exposed to macroeconomic pressure and cost-optimization decisions.
 
-
 Dashboard Overview
 
 An interactive Tableau dashboard was developed to help stakeholders explore:
@@ -167,7 +155,6 @@ Companies contributing the highest layoff volumes
 
 Dashboard screenshots are available in the /dashboard folder.
 
-
 How This Analysis Supports Business Decisions
 
 Leadership: Enables informed workforce planning aligned with economic cycles
@@ -177,7 +164,6 @@ HR Teams: Supports proactive hiring and reskilling strategies
 Investors: Highlights industry and maturity-stage risk exposure
 
 Job Seekers: Provides visibility into sector-level employment volatility
-
 
 Recommendations
 
