@@ -1,27 +1,40 @@
 🌍 Global Layoffs Analysis (2020–2023)
+📌 Project Overview
 
-Role: Business Analyst
-Tools: SQL, Excel, Tableau
-Focus Areas: Data Cleaning • Exploratory Analysis • Business Insights • Dashboarding • Strategic Recommendations
+This project analyzes global workforce layoffs between 2020 and 2023 to uncover trends across time, geography, industry, and company maturity.
+The goal is to transform raw layoff data into business-relevant insights that support strategic decision-making for leadership, HR teams, investors, and job seekers.
 
-Business Context
+The analysis focuses on understanding when, where, and why large-scale layoffs occurred during and after the COVID-19 pandemic.
 
-Between 2020 and 2023, organizations worldwide announced large-scale layoffs driven by the COVID-19 pandemic, economic uncertainty, and post-pandemic market corrections.
+🎯 Business Objective
 
-For business leaders, HR teams, and investors, understanding where, when, and why these layoffs occurred is critical for workforce planning and risk management.
+To analyze global layoff trends and provide data-driven insights that support:
 
-This project analyzes global layoff data to identify meaningful patterns across time, geography, industry, and company maturity, and translates those findings into business-relevant insights.
+Workforce planning
 
-Objective:
-To analyze global layoff trends and provide data-driven insights that support strategic decision-making around hiring, restructuring, and risk assessment.
+Hiring and restructuring decisions
 
-Dataset Overview
+Industry and geographic risk assessment
+
+🧰 Tools & Technologies
+
+SQL – Data cleaning, transformation, and analysis
+
+Excel – Initial data review and validation
+
+Tableau – Interactive dashboard development
+
+📂 Dataset Overview
 
 Source: Global layoffs dataset (2020–2023)
 
-Coverage: 1,600+ companies across 50+ countries
+Coverage:
 
-Key Fields:
+1,600+ companies
+
+50+ countries
+
+Key Fields
 
 Company
 
@@ -39,39 +52,39 @@ Company Stage
 
 Funds Raised
 
-Data Quality & Preparation Approach (SQL)
+🧹 Data Quality & Preparation (SQL)
 
-The raw dataset was not analysis-ready and contained several quality issues that could lead to misleading conclusions if left unaddressed.
+The raw dataset was not analysis-ready and contained multiple quality issues that could distort insights if left unresolved.
 
-Key Issues Identified
+Issues Identified
 
 Missing values in critical business fields
 
-Inconsistent naming across industries and countries
+Inconsistent naming of industries and countries
 
 Duplicate records
 
-Dates stored as text rather than date format
+Dates stored as text instead of date format
 
-Rows with incomplete layoff information
+Records with incomplete layoff information
 
 Cleaning Approach
 
-All data preparation was performed using SQL to ensure repeatability and scalability:
+All data preparation was performed using SQL to ensure scalability and repeatability:
 
 Removed duplicate records
 
 Standardized industry and country names
 
-Filtered out records with insufficient layoff information
+Filtered out incomplete layoff records
 
 Converted date fields and created time-based attributes
 
 Prepared clean, structured tables for analysis and visualization
 
-SQL scripts used for cleaning and analysis are available in the /sql folder.
+📁 SQL scripts used for cleaning and analysis are available in the /sql folder.
 
-Key Metrics
+📊 Key Metrics (KPIs)
 
 Total Employees Laid Off: 383,159
 
@@ -81,28 +94,26 @@ Countries Impacted: 51
 
 These KPIs provide a high-level view of the scale and global reach of workforce reductions.
 
-Key Insights
-Layoffs Over Time
+🔍 Key Insights
+📈 Layoffs Over Time
 
 Layoff activity remained relatively stable during 2020–2021
 
 Significant spikes occurred in late 2022 and early 2023
 
-This pattern reflects post-pandemic workforce corrections following aggressive hiring cycles
+Business Insight:
+Layoffs tend to follow economic cycles rather than isolated company failures, reflecting post-pandemic workforce corrections after aggressive hiring.
 
-Business Takeaway:
-Layoffs tend to follow economic cycles rather than isolated company failures.
-
-Layoffs by Company Stage
+🏢 Layoffs by Company Stage
 
 Post-IPO companies accounted for the highest number of layoffs
 
-Early-stage startups contributed a smaller share overall
+Early-stage startups contributed a smaller overall share
 
-Business Takeaway:
+Business Insight:
 Large, mature organizations drove most layoffs, indicating strategic restructuring rather than widespread startup collapse.
 
-Layoffs by Industry
+🏭 Layoffs by Industry
 
 Industries most impacted:
 
@@ -116,19 +127,19 @@ Finance
 
 Healthcare
 
-Business Takeaway:
-Consumer-facing and demand-sensitive sectors were more vulnerable during periods of economic uncertainty.
+Business Insight:
+Consumer-facing and demand-sensitive industries are more vulnerable during periods of economic uncertainty.
 
-Layoffs by Country
+🌎 Layoffs by Country
 
 The United States accounted for the majority of global layoffs
 
 India and several European countries followed at a significant distance
 
-Business Takeaway:
+Business Insight:
 Countries with strong technology and corporate ecosystems experienced the largest workforce corrections.
 
-Companies with the Highest Layoffs
+🏆 Companies with the Highest Layoffs
 
 Amazon
 
@@ -140,12 +151,12 @@ Microsoft
 
 Uber
 
-Business Takeaway:
-Even market-leading organizations are highly exposed to macroeconomic pressure and cost-optimization decisions.
+Business Insight:
+Even market-leading organizations are highly exposed to macroeconomic pressure and cost-optimization strategies.
 
-Dashboard Overview
+📊 Dashboard Overview
 
-An interactive Tableau dashboard was developed to help stakeholders explore:
+An interactive Tableau dashboard was developed to explore:
 
 Monthly layoff trends
 
@@ -153,19 +164,21 @@ Layoffs by industry, country, and company stage
 
 Companies contributing the highest layoff volumes
 
-Dashboard screenshots are available in the /dashboard folder.
+📁 Dashboard screenshots are available in the /dashboard folder.
 
-How This Analysis Supports Business Decisions
+💡 Business Impact
 
-Leadership: Enables informed workforce planning aligned with economic cycles
+This analysis supports decision-making for:
 
-HR Teams: Supports proactive hiring and reskilling strategies
+Leadership: Workforce planning aligned with economic cycles
 
-Investors: Highlights industry and maturity-stage risk exposure
+HR Teams: Proactive hiring, reskilling, and retention strategies
 
-Job Seekers: Provides visibility into sector-level employment volatility
+Investors: Industry and maturity-stage risk assessment
 
-Recommendations
+Job Seekers: Visibility into sector-level employment volatility
+
+✅ Strategic Recommendations
 
 Adopt phased, data-driven hiring strategies to reduce workforce volatility
 
@@ -174,3 +187,9 @@ Use workforce analytics to anticipate downturns and adjust headcount early
 Diversify industry exposure to manage employment risk
 
 Prioritize reskilling and internal mobility before large-scale layoffs
+
+📌 Project Structure
+├── sql/            # Data cleaning and analysis SQL scripts
+├── dashboard/      # Tableau dashboard screenshots
+├── data/           # Raw and cleaned datasets (if applicable)
+└── README.md
